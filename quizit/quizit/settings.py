@@ -25,8 +25,14 @@ SECRET_KEY = '89mw=l^0sq!3@nndyd%2=@lme4soff3)^ljdtw073pe#w+*ddy'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost:3000',
+    'localhost:8000'
+]
 
+CORS_ORIGIN_WHITELIST = (
+    'localhost:3000',
+)
 
 # Application definition
 
